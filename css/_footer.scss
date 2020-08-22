@@ -1,0 +1,130 @@
+.invite {
+  margin-top: 7rem;
+  padding: 7rem 0;
+  background: $dark-navy;
+  position: relative;
+  overflow-x: hidden;
+
+  &__text {
+    h3 {
+      color: white;
+    }
+  }
+
+  &__icons {
+    img {
+      padding: 0.5rem;
+    }
+  }
+
+  &__pattern {
+    position: absolute;
+    bottom: 0;
+    right: -10rem;
+  }
+}
+
+.footer {
+  padding: 2rem 0;
+  background: #272727;
+
+  #footer__logo {
+    fill: white;
+  }
+
+  &__links {
+    a {
+      color: white;
+      margin-right: 3rem;
+      &:hover,
+      &:focus {
+        color: $yellow;
+      }
+    }
+  }
+
+  &__icons {
+    a {
+      margin-right: 1.5rem;
+
+      #fb:hover {
+        fill: white;
+      }
+
+      #twitter:hover {
+        fill: white;
+      }
+
+      #insta:hover {
+        fill: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* invite section */
+  .invite {
+    &__text {
+      text-align: center !important;
+      width: 100%;
+    }
+
+    &__icons {
+      width: 100%;
+      padding-top: 5rem;
+    }
+  }
+  /* end invite section */
+}
+
+@media (max-width: 575.98px) {
+  /* invite Section */
+  .invite {
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    &__icons__row {
+      flex-wrap: nowrap !important;
+      img {
+        max-width: 40%;
+      }
+    }
+  }
+
+  /* end invite Section */
+
+  .footer {
+    text-align: center;
+
+    &__content {
+      display: block !important;
+    }
+
+    &__links {
+      display: block !important;
+      text-align: center;
+      margin: 3rem auto;
+
+      > a {
+        margin-right: 0 !important;
+      }
+      &__menu {
+        text-align: center !important;
+        > a {
+          margin: 1rem 0 !important;
+          display: block;
+        }
+      }
+    }
+
+    &__icons {
+      margin: 2rem auto 4rem auto !important;
+      a {
+        margin-right: 0 !important;
+        margin: 0 0.75rem !important;
+      }
+    }
+  }
+}

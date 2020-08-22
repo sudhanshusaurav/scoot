@@ -1,0 +1,66 @@
+@media (max-width: 991.98px) {
+  .hero {
+    background: url(/assets/images/careers-locations-hero-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img {
+      right: -4%;
+    }
+  }
+  /* end hero section */
+
+  .join {
+    #join__arrow {
+      bottom: 50%;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    background: url(/assets/images/careers-location-hero-mobile.jpg);
+    text-align: center;
+    img {
+      display: none;
+    }
+  }
+  /* end hero section */
+
+  /* join section */
+  .join {
+    #join__arrow {
+      position: absolute;
+      right: -110%;
+      bottom: 60%;
+    }
+  }
+  /* end join section */
+
+  .career {
+    &__row {
+      padding: 2.25rem 0;
+    }
+
+    &__col-1 {
+      width: 100%;
+      text-align: center;
+      h4 {
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    &__col-2 {
+      width: 100%;
+      text-align: center;
+      a {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import "variables";
+@import "globals";
+@import "header";
+@import "footer";
+
+/* hero section */
+.hero {
+  background: url(/assets/images/careers-locations-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5.5rem 0 4.25rem;
+  position: relative;
+  overflow-x: hidden;
+
+  h2 {
+    color: white;
+    font-weight: 500;
+  }
+
+  img {
+    position: absolute;
+    right: -2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+/* end hero section */
+
+/* join section */
+.join {
+  #join__arrow {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+  }
+}
+/* end join section */
+
+.why-join {
+  text-align: center;
+  padding: 3.75rem 0;
+
+  h2 {
+    font-weight: 500;
+    padding: 1rem 0;
+  }
+}
+
+.career {
+  &__row {
+    padding: 2.25rem;
+    margin: 0.75rem 0;
+    background: $light-grey;
+  }
+
+  &__col-1 {
+    h4 {
+      font-weight: 500;
+    }
+  }
+}
+
+@import "career-responsive";

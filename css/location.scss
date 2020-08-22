@@ -1,0 +1,101 @@
+@import "variables";
+@import "globals";
+@import "header";
+@import "footer";
+
+/* hero section */
+.hero {
+  background: url(/assets/images/careers-locations-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5.5rem 0 4.25rem;
+  position: relative;
+  overflow-x: hidden;
+
+  h2 {
+    color: white;
+    font-weight: 500;
+  }
+
+  img {
+    position: absolute;
+    right: -2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+/* end hero section */
+
+/*map section */
+.map {
+  margin: 7.5rem 0;
+
+  .location {
+    position: relative;
+
+    &__img {
+      width: 100%;
+      height: 33.75rem;
+      background: url(/assets/images/world-map-desktop.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 2rem 0;
+    }
+
+    &__tag {
+      position: absolute;
+      padding: 1.5rem 4rem;
+      background: $yellow;
+
+      &::after {
+        content: "";
+        width: auto;
+        height: auto;
+        border-top: 15px solid $yellow;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        position: absolute;
+        bottom: -40%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    #new-york {
+      top: 15%;
+      left: 5%;
+    }
+
+    #yoko {
+      top: 15%;
+      right: 15%;
+    }
+
+    #jaka {
+      top: 45%;
+      right: 40%;
+    }
+
+    #london {
+      top: 0;
+      left: 45%;
+    }
+  }
+}
+/* end map section */
+
+.city {
+  h3 {
+    font-weight: 500;
+  }
+  &__col__2 {
+    width: 70%;
+
+    p {
+      width: 60%;
+    }
+  }
+}
+
+@import "location-responsive";

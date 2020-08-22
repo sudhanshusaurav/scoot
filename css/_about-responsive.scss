@@ -1,0 +1,54 @@
+@media (max-width: 991.98px) {
+  .hero {
+    background: url(/assets/images/about-hero-tablet.jpg);
+
+    img {
+      right: -4%;
+    }
+  }
+
+  .mission {
+    #mission__arrow-1 {
+      bottom: 50%;
+    }
+  }
+
+  .faq {
+    &__col__1 {
+      width: 100%;
+      text-align: center;
+    }
+    &__col__2 {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    background: url(/assets/images/about-hero-mobile.jpg);
+    text-align: center;
+
+    img {
+      display: none;
+    }
+  }
+
+  .mission {
+    #mission__arrow-1 {
+      bottom: unset;
+      top: 20%;
+      right: -120%;
+    }
+
+    #mission__arrow-2 {
+      left: -30%;
+    }
+  }
+
+  .question {
+    > div {
+      flex-wrap: nowrap;
+    }
+  }
+}

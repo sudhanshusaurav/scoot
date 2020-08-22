@@ -1,0 +1,109 @@
+@import "variables";
+@import "globals";
+@import "header";
+@import "footer";
+
+/*hero Section */
+.hero {
+  background: url(/assets/images/home-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+  padding: 10rem 0;
+
+  &__text {
+    h2 {
+      width: 50%;
+      color: $snow;
+    }
+
+    p {
+      width: 40%;
+      color: $snow;
+      margin: 2.5rem 0 2.5rem 6rem;
+    }
+    a {
+      margin-left: 6rem;
+    }
+  }
+
+  #hero__home__line {
+    position: absolute;
+    left: 0;
+    top: 52%;
+  }
+
+  #hero__home__arrow {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+  }
+
+  #hero__home__circle {
+    position: absolute;
+    top: 63%;
+    right: -2rem;
+  }
+}
+
+/* End of Hero Section */
+
+/* Services Section */
+.service {
+  position: relative;
+  padding: 5rem 0;
+
+  &__app,
+  &__scooter,
+  &__ride {
+    margin: 0 1.6rem;
+    padding-top: 5rem;
+  }
+
+  h4 {
+    margin: 3rem 0 2rem;
+  }
+
+  p {
+    color: $dim-grey;
+  }
+
+  &::after {
+    content: "";
+    width: 65%;
+    height: 1rem;
+    background: $dim-grey;
+    left: 0;
+    top: 36%;
+    position: absolute;
+    z-index: -10;
+  }
+}
+
+/* End of Services Section */
+
+/*features Section */
+.features {
+  padding: 3.75rem 0;
+}
+#features__arrow-1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#features__arrow-2 {
+  position: absolute;
+  left: -5%;
+  top: 0;
+}
+
+#features__arrow-3 {
+  position: absolute;
+  right: -25%;
+  top: 15%;
+}
+/* End features Section */
+
+@import "main-responsive";

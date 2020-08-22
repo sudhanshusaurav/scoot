@@ -1,0 +1,154 @@
+@media (max-width: 991.98px) {
+  /* Hero Section */
+  .hero {
+    background: url(/assets/images/home-hero-tablet.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 8.5rem 0 13.5rem !important;
+
+    &__text {
+      text-align: center;
+      h2 {
+        width: 100% !important;
+        padding-top: 1rem;
+      }
+      p {
+        width: 90% !important;
+        margin: 4rem auto 2.25rem !important;
+      }
+      a {
+        margin: 0 auto !important;
+      }
+    }
+
+    #hero__home__line {
+      display: none;
+    }
+
+    #hero__home__arrow {
+      left: -15% !important;
+      top: unset !important;
+      bottom: 2% !important;
+    }
+
+    #hero__home__circle {
+      top: unset !important;
+      bottom: 5% !important;
+      right: -2rem;
+    }
+  }
+  /* End Hero Section */
+
+  /* Services Section */
+  .service {
+    &__app,
+    &__scooter,
+    &__ride {
+      display: flex;
+      align-items: center;
+
+      img {
+        padding: 0 1.75rem;
+      }
+    }
+
+    &__text {
+      padding: 0 1.75rem !important;
+    }
+
+    &::after {
+      content: "";
+      width: 1rem !important;
+      height: 80% !important;
+      background: $dim-grey;
+      left: 17% !important;
+      top: 0 !important;
+      position: absolute;
+      z-index: -10;
+    }
+  }
+  /* End Services Section */
+
+  /* Features Section */
+  #features__arrow-1 {
+    bottom: 50%;
+  }
+
+  #features__arrow-2 {
+    left: -10%;
+  }
+
+  #features__arrow-3 {
+    right: -50%;
+  }
+  /* ENd Features Section */
+}
+
+@media (max-width: 575.98px) {
+  /* hero section */
+  .hero {
+    background: url(/assets/images/home-hero-mobile.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
+    &__text {
+      h2 {
+        font-size: 2rem !important;
+      }
+      p {
+        width: 100% !important;
+      }
+    }
+
+    #hero__home__arrow {
+      left: -90% !important;
+      top: unset !important;
+      bottom: 5% !important;
+    }
+
+    #hero__home__circle {
+      display: none;
+    }
+  }
+  /* End hero Section */
+
+  /* services Section */
+  .service {
+    margin-top: 4rem;
+    &__app,
+    &__scooter,
+    &__ride {
+      display: block !important;
+      text-align: center;
+      margin: 0 !important;
+      padding: 3.5rem 0 !important;
+    }
+
+    &__text {
+      padding: 0 !important;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  /* End services Section */
+
+  /* features section */
+  #features__arrow-1 {
+    bottom: unset;
+    top: 20%;
+    right: -110%;
+  }
+
+  #features__arrow-2 {
+    left: -50%;
+  }
+
+  #features__arrow-3 {
+    right: -145%;
+    top: 0;
+  }
+  /* end features section */
+}

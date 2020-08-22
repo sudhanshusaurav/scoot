@@ -1,0 +1,109 @@
+@import "variables";
+@import "globals";
+@import "header";
+@import "footer";
+
+/* hero section */
+.hero {
+  background: url(/assets/images/about-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5.5rem 0 4.25rem;
+  position: relative;
+  overflow-x: hidden;
+
+  h2 {
+    color: white;
+    font-weight: 500;
+  }
+
+  img {
+    position: absolute;
+    right: -2%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+/* end hero section */
+
+/* mission section */
+.mission {
+  padding: 3.75rem 0;
+
+  #mission__arrow-1 {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+  }
+
+  #mission__arrow-2 {
+    position: absolute;
+    top: 0;
+    left: -7%;
+  }
+}
+/* end mission section */
+
+/* Values Section */
+.values {
+  text-align: center;
+  padding: 3.75rem 0;
+
+  h2 {
+    padding: 1rem 0;
+    font-weight: 500;
+  }
+}
+/*end Values Section */
+
+/* faq section */
+.faq {
+  text-align: center;
+  padding: 3.75rem 0;
+
+  h2 {
+    margin: 1rem 0;
+    font-weight: 500;
+  }
+
+  &__row {
+    margin: 2rem 0;
+
+    h3 {
+      font-weight: 500;
+    }
+  }
+
+  &__col__2 {
+    text-align: left;
+    width: 60%;
+
+    .question {
+      margin: 0.5rem 0;
+      padding: 2.5rem;
+      background: $light-grey;
+
+      h4 {
+        font-weight: 500;
+      }
+
+      p {
+        margin-top: 1rem;
+        display: none;
+      }
+      &--open {
+        background: $light-yellow;
+        p {
+          display: block;
+        }
+      }
+
+      &:hover {
+        background: $light-yellow;
+      }
+    }
+  }
+}
+/* end faq section */
+
+@import "about-responsive";

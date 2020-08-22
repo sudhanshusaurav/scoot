@@ -1,0 +1,128 @@
+@media (max-width: 991.98px) {
+  .hero {
+    background: url(/assets/images/careers-locations-hero-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img {
+      right: -4%;
+    }
+  }
+  /* end hero section */
+
+  /*map section */
+  .map {
+    margin: 7.5rem 0;
+
+    .location {
+      &__img {
+        height: 21rem;
+        background: url(/assets/images/world-map-tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &__tag {
+        padding: 1rem 2.5rem;
+      }
+
+      #new-york {
+        top: 10%;
+        left: 2%;
+      }
+
+      #yoko {
+        top: 10%;
+        right: 15%;
+      }
+
+      #london {
+        top: -10%;
+        left: 25%;
+      }
+    }
+  }
+  /* end map section */
+
+  .city {
+    text-align: center;
+    h3 {
+      font-weight: 500;
+    }
+    &__col__1 {
+      width: 100%;
+    }
+    &__col__2 {
+      width: 100%;
+
+      p {
+        width: 100%;
+        padding: 0 6rem;
+        margin: 5.5rem 0 3rem;
+      }
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    background: url(/assets/images/careers-location-hero-mobile.jpg);
+    text-align: center;
+    img {
+      display: none;
+    }
+  }
+  /* end hero section */
+
+  /*map section */
+  .map {
+    margin: 7.5rem 0;
+
+    .location {
+      &__img {
+        height: 9.5rem;
+        background: url(/assets/images/world-map-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &__tag {
+        padding: 1rem 2.5rem;
+        position: static;
+        text-align: center;
+        margin: 0.5rem 0;
+        background: $light-yellow;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  /* end map section */
+
+  .city {
+    text-align: center;
+    h3 {
+      font-weight: 500;
+    }
+    &__col__1 {
+      width: 100%;
+    }
+    &__col__2 {
+      width: 100%;
+
+      p {
+        width: 100%;
+        padding: 0;
+        margin: 5.5rem 0 3rem;
+      }
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+}
