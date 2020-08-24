@@ -366,6 +366,7 @@ h4 {
     position: absolute;
     display: block !important;
     left: 2rem;
+    cursor: pointer;
   }
   .header__burger > span {
     width: 20px;
