@@ -21,10 +21,10 @@ const questions = document.querySelectorAll(".question");
 
 questions.forEach((question) => {
   question.addEventListener("click", function () {
-    if (question.classList.contains("question--open")) {
-      this.classList.remove("question--open");
+    if (question.classList.contains("question-open")) {
+      this.classList.remove("question-open");
     } else {
-      this.classList.add("question--open");
+      this.classList.add("question-open");
     }
   });
 });

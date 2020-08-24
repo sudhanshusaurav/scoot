@@ -89,12 +89,16 @@
 
       p {
         margin-top: 1rem;
-        display: none;
+        max-height: 0px;
+        opacity: 0;
+        transition: all 1s;
       }
-      &--open {
+
+      &-open {
         background: $light-yellow;
         p {
-          display: block;
+          max-height: 5rem;
+          opacity: 1;
         }
       }
 
